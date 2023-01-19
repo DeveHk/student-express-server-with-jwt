@@ -60,7 +60,7 @@ const authenticate_login = async (req, res) => {
         try {
             if (await bcrypt.compare(req.body.password, user.password)) {
                 //jwt session token(athorization)
-                const acTkn = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
+                const acTkn = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET,{expiresIn: '1h'})
                 res.status(201).json({ accessTocken: acTkn })
             }
             else
