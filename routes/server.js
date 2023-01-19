@@ -75,7 +75,7 @@ const delet = (req, res) => {
 //------Routes
 /*INDEX*/
 studentRouter.get('/user',authenticateTocken, indexId)
-studentRouter.get('/',authenticateTocken, indexAll)
+studentRouter.get('/', indexAll)
 
 /*CREATE POST*/
 studentRouter.post('/', authenticateTocken, create)
