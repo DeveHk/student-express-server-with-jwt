@@ -1,0 +1,12 @@
+[
+  {
+    "user": "user",
+    "password": "admin",
+    "info": {
+      "name": "Harsh Kumar",
+      "rollnumber": "UMP134",
+      "email": "stu@email.com",
+      "id": 5
+    }
+  }
+]
