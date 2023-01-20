@@ -8,5 +8,15 @@
       "email": "stu@email.com",
       "id": 5
     }
+  },
+  {
+    "user": "a",
+    "password": "$2b$10$JYYJbfSA0SYSN0UBbNCR3uytw7hesf8iCQZl0uvuPB89fGmMbo.oS",
+    "info": {
+      "name": "name",
+      "rollnumber": "rolln",
+      "email": "email",
+      "id": "1lvc0glkld4vdihr"
+    }
   }
 ]

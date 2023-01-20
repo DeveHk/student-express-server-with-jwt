@@ -10,6 +10,7 @@ studentRouter.use(express.urlencoded({ extended: true }))
 //return the user authorizing the token
 const authenticateTocken = (req, res, nex) => {
     const authHeader = req.headers['authorisation']
+    console.log(authHeader.split(' ')[1])
     const tocken = authHeader && authHeader.split(' ')[1]
     if (tocken == null) return res.status(401).send()
 
@@ -54,6 +55,8 @@ const create = (req, res) => {
 
 const update = (req, res) => {
     const {user, index}=checkUser(req.user.user)
+    console.log(req.body)
+    console.log('/n /n')
     user.info.name=req.body.name
     user.info.rollnumber=req.body.rollnumber
     user.info.email=req.body.email
